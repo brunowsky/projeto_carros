@@ -1,0 +1,31 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Inventário de Revendedora de Carros - Projeto Distribuidos</h1>
+
+<hr>
+
+<p>
+  <strong>Quantidade de Carros:</strong>
+  <%= @quantidade_carros %>
+</p>
+
+<p>
+  <strong>Valor Total do Inventário: R$</strong>
+  <%= number_with_delimiter(@carros.sum(:preço), delimiter: '.', separator: ',') %>
+</p>
+<hr>
+<%= link_to "Criar novo carro", new_carro_path, class: "btn-verde" %>
+
+
+<div class="flex-container">
+  <% @carros.each do |carro| %>
+    <div class="card">
+      <div class="container">
+        <%= render carro %>
+        <p>
+          <%= link_to "Mostrar esse carro", carro, class: "btn-azul" %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>

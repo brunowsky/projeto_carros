@@ -1,0 +1,65 @@
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+  
+.card {
+    flex: none;
+    width: 280px;
+    margin: 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    padding: 2px 16px;
+}
+
+/*BOTÃO VERDE*/
+.btn-verde {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 24px; /* Altere os valores para ajustar o tamanho do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Ajuste o tamanho da fonte se necessário */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Arredonda os cantos do botão */
+  }
+  
+  .btn-verde:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+  }
+
+/*BOTÃO AZUL*/
+.btn-azul {
+    background-color: #2a71f5; /* Azul */
+    border: none;
+    color: white;
+    padding: 10px 24px; /* Altere os valores para ajustar o tamanho do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Ajuste o tamanho da fonte se necessário */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Arredonda os cantos do botão */
+  }
+  
+  .btn-azul:hover {
+    background-color: #1c8bf3; /* Cor ao passar o mouse */
+  }

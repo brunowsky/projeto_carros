@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @carro %>
+
+<div>
+  <%= link_to "Editar carro", edit_carro_path(@carro) %> |
+  <%= link_to "Voltar para todos os carros", carros_path %>
+
+  <%= button_to "Deletar carro", @carro, method: :delete %>
+</div>
